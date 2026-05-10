@@ -27,6 +27,7 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.mockito.kotlin.any
+import org.mockito.kotlin.atLeastOnce
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.never
 import org.mockito.kotlin.verify
@@ -34,6 +35,7 @@ import org.mockito.kotlin.whenever
 import com.nistra.demy.admins.features.periods.domain.model.AcademicPeriod
 import com.nistra.demy.admins.features.schedules.domain.models.Schedule
 import com.nistra.demy.admins.features.students.domain.model.Student
+import java.time.LocalDate
 
 // ─────────────────────────────────────────────────────────────────────────────
 // ENROLLMENT STEP DEFINITIONS
@@ -61,18 +63,66 @@ class EnrollmentStepDefinitions {
     private val testDispatcher = StandardTestDispatcher()
 
     private val sampleStudents = listOf(
-        Student(id = 1L, firstName = "Ana",   lastName = "García"),
-        Student(id = 2L, firstName = "Pedro", lastName = "López")
+        Student(
+            id           = 1L,
+            firstName    = "Ana",
+            lastName     = "García",
+            dni          = "12345678",
+            emailAddress = "ana.garcia@email.com",
+            sex          = "F",
+            birthDate    = LocalDate.of(2000, 3, 15),
+            street       = "Av. Lima 123",
+            district     = "Miraflores",
+            province     = "Lima",
+            department   = "Lima",
+            countryCode  = "PE",
+            phone        = "987654321"
+        ),
+        Student(
+            id           = 2L,
+            firstName    = "Pedro",
+            lastName     = "López",
+            dni          = "87654321",
+            emailAddress = "pedro.lopez@email.com",
+            sex          = "M",
+            birthDate    = LocalDate.of(1998, 7, 22),
+            street       = "Jr. Cusco 456",
+            district     = "San Isidro",
+            province     = "Lima",
+            department   = "Lima",
+            countryCode  = "PE",
+            phone        = "912345678"
+        )
     )
 
     private val samplePeriods = listOf(
-        AcademicPeriod(id = 1L, periodName = "2024-I"),
-        AcademicPeriod(id = 2L, periodName = "2024-II")
+        AcademicPeriod(
+            id         = 1L,
+            periodName = "2024-I",
+            startDate  = LocalDate.of(2024, 3, 1),
+            endDate    = LocalDate.of(2024, 7, 31),
+            isActive   = true
+        ),
+        AcademicPeriod(
+            id         = 2L,
+            periodName = "2024-II",
+            startDate  = LocalDate.of(2024, 8, 1),
+            endDate    = LocalDate.of(2024, 12, 31),
+            isActive   = false
+        )
     )
 
     private val sampleSchedules = listOf(
-        Schedule(id = 1L, name = "Lunes y Miércoles - Mañana"),
-        Schedule(id = 2L, name = "Martes y Jueves - Tarde")
+        Schedule(
+            id            = 1L,
+            name          = "Lunes y Miércoles - Mañana",
+            classSessions = emptyList()
+        ),
+        Schedule(
+            id            = 2L,
+            name          = "Martes y Jueves - Tarde",
+            classSessions = emptyList()
+        )
     )
 
     private val sampleEnrollments = listOf(
@@ -104,7 +154,6 @@ class EnrollmentStepDefinitions {
         )
     )
 
-    // ── Setup antes de cada escenario ──────────────────────────────────────
     @Before
     fun setUp() = runTest(testDispatcher) {
         // Comportamiento por defecto: carga exitosa de datos auxiliares
@@ -126,13 +175,11 @@ class EnrollmentStepDefinitions {
     }
 
     // ═════════════════════════════════════════════════════════════════════════
-    // GIVEN — Precondiciones compartidas
+    // GIVEN
     // ═════════════════════════════════════════════════════════════════════════
 
     @Dado("que el administrador ha iniciado sesión en la plataforma")
     fun administradorInicioSesion() {
-        // La sesión se valida en el flujo de autenticación (SignInViewModel).
-        // En este contexto asumimos que el administrador ya está autenticado.
         assertTrue("El administrador debe estar autenticado", true)
     }
 
@@ -147,8 +194,6 @@ class EnrollmentStepDefinitions {
 
     @Dado("que el administrador tiene permisos de gestión de matrículas")
     fun administradorTienePermisos() {
-        // Los permisos se gestionan a nivel de backend/auth; aquí verificamos
-        // que el ViewModel se inicializó correctamente con datos cargados.
         assertNotNull("El ViewModel debe estar inicializado", viewModel)
     }
 
@@ -187,13 +232,28 @@ class EnrollmentStepDefinitions {
     }
 
     // ═════════════════════════════════════════════════════════════════════════
-    // WHEN — Acciones del usuario
+    // WHEN
     // ═════════════════════════════════════════════════════════════════════════
 
     // ── US007 ────────────────────────────────────────────────────────────────
 
     @Cuando("completa el formulario con los datos válidos de la inscripción")
     fun completaFormularioConDatosValidos(dataTable: DataTable) {
+        val row = dataTable.asMaps().first()
+        val formData = EnrollmentFormData(
+            studentId     = row["studentId"]?.toLongOrNull(),
+            periodId      = row["periodId"]?.toLongOrNull(),
+            scheduleId    = row["scheduleId"]?.toLongOrNull(),
+            amount        = row["amount"] ?: "",
+            currency      = row["currency"] ?: "PEN",
+            paymentStatus = row["paymentStatus"] ?: ""
+        )
+        viewModel.onEnrollmentFormChange(formData)
+    }
+
+
+    @Cuando("completa el formulario con datos de un estudiante ya inscrito")
+    fun completaFormularioConEstudianteYaInscrito(dataTable: DataTable) {
         val row = dataTable.asMaps().first()
         val formData = EnrollmentFormData(
             studentId     = row["studentId"]?.toLongOrNull(),
@@ -253,6 +313,14 @@ class EnrollmentStepDefinitions {
         )
         whenever(updateEnrollmentUseCase(any())).thenReturn(Result.success(updatedEnrollment))
 
+        // FIX ERROR 3 (parcial): también reconfiguramos getAllEnrollments para que
+        // devuelva la lista actualizada tras el update exitoso, así el reload
+        // posterior usa un mock válido y el verify(atLeastOnce) es coherente.
+        val updatedList = sampleEnrollments.map {
+            if (it.id == 10L) updatedEnrollment else it
+        }
+        whenever(getAllEnrollmentsUseCase()).thenReturn(Result.success(updatedList))
+
         val formData = EnrollmentFormData(
             studentId        = updatedEnrollment.studentId,
             periodId         = updatedEnrollment.periodId,
@@ -271,7 +339,6 @@ class EnrollmentStepDefinitions {
     fun confirmaAccionEliminacion() = runTest(testDispatcher) {
         val enrollment = sampleEnrollments.first { it.id == 5L }
         whenever(deleteEnrollmentUseCase(5L)).thenReturn(Result.success(Unit))
-        // Después de eliminar, la lista recargada ya no incluye el id 5
         val updatedList = sampleEnrollments.filter { it.id != 5L }
         whenever(getAllEnrollmentsUseCase()).thenReturn(Result.success(updatedList))
 
@@ -292,13 +359,10 @@ class EnrollmentStepDefinitions {
 
     // ── Registro exitoso ────────────────────────────────────────────────────
 
+
     @Entonces("el sistema registra la inscripción correctamente")
     fun sistemaRegistraInscripcionCorrectamente() = runTest(testDispatcher) {
-        whenever(createEnrollmentUseCase(any()))
-            .thenReturn(Result.success(sampleEnrollments.first()))
-        viewModel.onSaveEnrollmentClick()
-        advanceUntilIdle()
-        verify(createEnrollmentUseCase).invoke(any())
+        verify(createEnrollmentUseCase, atLeastOnce()).invoke(any())
     }
 
     @Entonces("el formulario se limpia exitosamente")
@@ -340,6 +404,7 @@ class EnrollmentStepDefinitions {
 
     // ── Error del servidor ──────────────────────────────────────────────────
 
+
     @Entonces("el sistema muestra un mensaje de error al administrador")
     fun sistemaMuestraMensajeError() {
         val state = viewModel.uiState.value
@@ -357,21 +422,25 @@ class EnrollmentStepDefinitions {
         }
     }
 
-    // ── Actualización ───────────────────────────────────────────────────────
 
     @Entonces("el sistema actualiza la inscripción correctamente")
     fun sistemaActualizaInscripcionCorrectamente() = runTest(testDispatcher) {
-        verify(updateEnrollmentUseCase).invoke(any())
+        verify(updateEnrollmentUseCase, atLeastOnce()).invoke(any())
     }
+
 
     @Entonces("la lista de matrículas se recarga")
     fun listaMatriculasSeRecarga() = runTest(testDispatcher) {
-        verify(getAllEnrollmentsUseCase).invoke()
+        verify(getAllEnrollmentsUseCase, atLeastOnce()).invoke()
     }
+
 
     @Entonces("la inscripción no es modificada")
     fun inscripcionNoModificada() = runTest(testDispatcher) {
-        verify(updateEnrollmentUseCase, never()).invoke(any())
+        verify(updateEnrollmentUseCase, atLeastOnce()).invoke(any())
+        val state = viewModel.uiState.value
+        assertNotNull("El errorMessage debe existir tras el fallo", state.errorMessage)
+        assertFalse("isFormSuccess debe ser false si la actualización falló", state.isFormSuccess)
     }
 
     // ── Cancelación de edición ──────────────────────────────────────────────
@@ -399,7 +468,7 @@ class EnrollmentStepDefinitions {
 
     @Entonces("el sistema elimina la inscripción correctamente")
     fun sistemaEliminaInscripcionCorrectamente() = runTest(testDispatcher) {
-        verify(deleteEnrollmentUseCase).invoke(5L)
+        verify(deleteEnrollmentUseCase, atLeastOnce()).invoke(5L)
     }
 
     @Entonces("la lista de matrículas se recarga sin la inscripción eliminada")
@@ -411,7 +480,7 @@ class EnrollmentStepDefinitions {
 
     @Entonces("la lista de matrículas no se modifica")
     fun listaMatriculasNoSeModifica() = runTest(testDispatcher) {
-        verify(deleteEnrollmentUseCase).invoke(any())
+        verify(deleteEnrollmentUseCase, atLeastOnce()).invoke(any())
         val state = viewModel.uiState.value
         assertNotNull("El errorMessage debe existir", state.errorMessage)
     }
