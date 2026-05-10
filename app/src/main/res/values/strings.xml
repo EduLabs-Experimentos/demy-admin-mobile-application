@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demy</string>
+    <string name="tablet_only_title">Device Not Supported</string>
+    <string name="tablet_only_message">Demy for Admins has been designed and optimized exclusively for tablets in landscape orientation, in order to offer a wider interface and take full advantage of the administrative panel functionalities.\n\nTo ensure a proper experience, we invite you to access from a tablet in landscape orientation.\n\nThank you,\nThe Demy Team</string>
+    <string name="accept">Accept</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="students_screen_title">Manage Student Information</string>
+    <string name="students_screen_description">Register, edit, and organize all the student records in your academy.</string>
+
+    <!-- Student List -->
+    <string name="students_search_label">Search students</string>
+    <string name="students_search_placeholder">Search</string>
+    <string name="students_dni_label">ID</string>
+    <string name="students_email_label">Email</string>
+    <string name="students_phone_label">Phone</string>
+    <string name="students_edit">Edit student</string>
+    <string name="students_delete">Delete student</string>
+
+    <!-- Register / Edit Student -->
+    <string name="students_register_title">Register New Student</string>
+    <string name="students_edit_title">Edit Student: %1$s</string>
+    <string name="students_name_label">First Name</string>
+    <string name="students_lastname_label">Last Name</string>
+    <string name="students_dni_input">ID</string>
+    <string name="students_email_input">Email</string>
+    <string name="students_phone_input">Phone</string>
+    <string name="students_country_code">Code</string>
+    <string name="students_sex_label">Sex</string>
+    <string name="students_birthdate_label">Birth Date (Y-M-d)</string>
+    <string name="students_street_label">Street</string>
+    <string name="students_district_label">District</string>
+    <string name="students_province_label">Province</string>
+    <string name="students_department_label">Department</string>
+
+    <!-- Buttons -->
+    <string name="students_register_button">Register Student</string>
+    <string name="students_save_button">Save Changes</string>
+    <string name="students_cancel_button">Cancel</string>
+
+    <!-- States -->
+    <string name="students_loading">Loading…</string>
+    <string name="students_error_message">An error occurred while registering the student</string>
+
+    <!-- Sex -->
+    <string name="students_sex_male">M</string>
+    <string name="students_sex_female">F</string>
+</resources>

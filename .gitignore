@@ -1,0 +1,60 @@
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+*.gradle.cache
+
+# Local configuration
+local.properties
+env.properties
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+/.navigation/
+*.hprof
+
+# Baseline Profiles
+baseline-prof.txt
+baselineProfiles/
+*.dm
+
+# Log files
+*.log
+
+# Generated files
+captures/
+.externalNativeBuild/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Build artifacts
+*.apk
+*.aab
+*.aar
+*.ap_
+*.so
+output.json
+output-metadata.json
+
+# Release folder
+app/release/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Kotlin/Java
+*.class
+out/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Cache
+.cxx/

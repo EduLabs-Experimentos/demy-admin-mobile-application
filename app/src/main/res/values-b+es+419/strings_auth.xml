@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_label_email">Correo</string>
+    <string name="auth_icon_email">Ícono de Correo</string>
+    <string name="auth_label_password">Contraseña</string>
+    <string name="auth_icon_password">Ícono de Contraseña</string>
+    <string name="sign_in_text_btn_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="sign_in_btn_sign_in">Iniciar Sesión</string>
+    <string name="sign_in_icon_sign_in">Ícono de Iniciar Sesión</string>
+    <string name="sign_in_header_title">Bienvenido de vuelta</string>
+    <string name="sign_in_header_subtitle">Inicia sesión para continuar</string>
+    <string name="sign_in_footer_text">"¿No tienes una cuenta? "</string>
+    <string name="sign_in_footer_action_text">Regístrate</string>
+    <string name="sign_up_header_title">Empieza ahora</string>
+    <string name="sign_up_header_subtitle">Crea una nueva cuenta</string>
+    <string name="sign_up_footer_text">"¿Ya tienes una cuenta? "</string>
+    <string name="sign_up_footer_action_text">Inicia Sesión</string>
+    <string name="sign_up_btn_sign_up">Registrarse</string>
+    <string name="sign_up_icon_sign_up">Ícono de Registrarse</string>
+    <string name="verify_account_header_title">Verifica tu cuenta</string>
+    <string name="verify_account_header_subtitle">Revisa tu bandeja de entrada</string>
+    <string name="verify_account_btn_verify">Verificar</string>
+    <string name="verify_account_icon_verify">Ícono de Verificar</string>
+    <string name="complete_account_header_title">Ya casi terminamos</string>
+    <string name="complete_account_header_subtitle">Completa tu perfil para crear tu cuenta</string>
+    <string name="complete_account_first_name">Nombre</string>
+    <string name="complete_account_last_name">Apellido</string>
+    <string name="complete_account_country_code">Código de país</string>
+    <string name="complete_account_phone_number">Número de teléfono</string>
+    <string name="complete_account_dni">DNI</string>
+    <string name="complete_account_icon_complete_account">Ícono de Completar Cuenta</string>
+    <string name="complete_account_btn_complete_account">Completar Cuenta</string>
+    <string name="set_up_academy_academy_name">Nombre de la academia</string>
+    <string name="set_up_academy_academy_description">Descripción de la academia</string>
+    <string name="set_up_academy_street">Dirección</string>
+    <string name="set_up_academy_district">Distrito</string>
+    <string name="set_up_academy_province">Provincia</string>
+    <string name="set_up_academy_department">Departamento</string>
+    <string name="set_up_academy_email">Correo electrónico</string>
+    <string name="set_up_academy_country_code">Código de país</string>
+    <string name="set_up_academy_phone">Teléfono</string>
+    <string name="set_up_academy_ruc">RUC</string>
+    <string name="set_up_academy_icon">Ícono de Academia</string>
+    <string name="set_up_academy_button">Crear Academia</string>
+    <string name="set_up_academy_title">Registra tu academia</string>
+    <string name="set_up_academy_subtitle">Completa la información para crear el perfil de tu academia</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Billing Search Panel -->
+    <string name="billing_search_title">Search Accounts</string>
+    <string name="billing_search_description">Find and manage billing accounts</string>
+    <string name="billing_search_placeholder">Search by DNI</string>
+    <string name="billing_not_found">No accounts found</string>
+    <string name="billing_found_count">%1$d account(s) found</string>
+    <string name="billing_edit_action_description">Edit billing account</string>
+    <string name="billing_delete_action_description">Delete billing account</string>
+    <string name="billing_student_id_label">Student ID: %1$s</string>
+    <string name="billing_academy_id_label">Academy ID: %1$s</string>
+
+    <!-- Billing Registration Form -->
+    <string name="billing_register_title">Register New Account</string>
+    <string name="billing_register_description">Complete the details to register a new billing account</string>
+    <string name="billing_student_id">Student ID</string>
+    <string name="billing_register_button">Register Account</string>
+    <string name="billing_register_button_loading">Registering…</string>
+
+    <!-- Billing Screen -->
+    <string name="billing_screen_title">Manage billing information</string>
+    <string name="billing_screen_description">Manage the registration of new accounts and consult the complete directory.</string>
+    <string name="billing_register_success">Billing account registered successfully!</string>
+
+    <!-- Validation Messages -->
+    <string name="billing_validation_required_fields">Please enter the student ID</string>
+
+    <!-- Error Messages -->
+    <string name="billing_error_register_failed">Error registering account</string>
+    <string name="billing_error_load_failed">Error loading accounts</string>
+
+    <!-- Billing Details Screen & ViewModel -->
+    <string name="billing_details_title">Account Details</string>
+    <string name="billing_details_back_button_description">Back</string>
+    <string name="billing_details_error_message">Error: %1$s</string>
+    <string name="billing_details_account_id">Account ID: %1$s</string>
+    <string name="billing_dni_number_label">DNI: %1$s</string>
+    <string name="billing_details_invoices_title">Invoices (%1$d)</string>
+    <string name="billing_details_no_invoices">This account has no invoices yet.</string>
+    <string name="billing_details_invoice_item_label">- Invoice #%1$s: %2$s %3$s (%4$s)</string>
+    <string name="billing_details_add_invoice_button">Add New Invoice</string>
+    <string name="billing_details_error_unknown">Unknown error</string>
+
+    <!-- Add Invoice Dialog (from ViewModel) -->
+    <string name="billing_add_invoice_validation_empty">Please complete all fields.</string>
+    <string name="billing_add_invoice_validation_invalid_amount">The entered amount is not a valid number.</string>
+    <string name="billing_add_invoice_success">Invoice added successfully!</string>
+    <string name="billing_add_invoice_error">Error saving: %1$s</string>
+</resources>

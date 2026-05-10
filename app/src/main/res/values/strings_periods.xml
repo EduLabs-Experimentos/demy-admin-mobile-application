@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="periods_screen_title">Manage Academic Periods</string>
+    <string name="periods_screen_description">Create, edit, and control your institution’s academic periods.</string>
+
+    <!-- Academic Periods Search Panel -->
+    <string name="periods_search_title">Search Academic Periods</string>
+    <string name="periods_search_description">Find and manage registered academic periods</string>
+    <string name="periods_search_placeholder">Search by name or date</string>
+    <string name="periods_search_input_placeholder">Enter name or date…</string>
+    <string name="periods_not_found">No academic periods found</string>
+    <string name="periods_found_count">%1$d academic period(s) found</string>
+    <string name="period_edit">Edit period</string>
+    <string name="period_delete">Delete period</string>
+    <string name="period_search">Search</string>
+
+    <!-- Academic Period Registration Form -->
+    <string name="periods_register_title">Register New Academic Period</string>
+    <string name="periods_register_description">Fill in the details to register a new academic period</string>
+    <string name="periods_name">Period Name</string>
+    <string name="periods_start_date">Start Date (yyyy-MM-dd)</string>
+    <string name="periods_end_date">End Date (yyyy-MM-dd)</string>
+    <string name="periods_is_active">Is Active?</string>
+    <string name="periods_register_button">Register Period</string>
+    <string name="periods_register_button_loading">Registering…</string>
+    <string name="periods_save_changes_button">Save Changes</string>
+    <string name="periods_cancel_button">Cancel</string>
+
+    <!-- Academic Period Screen -->
+    <string name="periods_register_success">Academic period registered successfully!</string>
+
+    <!-- Validation Messages -->
+    <string name="periods_validation_required_fields">Please complete all required fields</string>
+
+    <!-- Error Messages -->
+    <string name="periods_error_register_failed">Failed to register academic period</string>
+    <string name="periods_error_load_failed">Failed to load periods</string>
+
+    <!-- Status & Labels -->
+    <string name="periods_status_active">Active</string>
+    <string name="periods_status_inactive">Inactive</string>
+    <string name="periods_status_label">Status: </string>
+    <string name="periods_date_range_label">%1$s – %2$s</string>
+    <string name="periods_start_date_label">Start Date: </string>
+    <string name="periods_end_date_label">End Date: </string>
+</resources>

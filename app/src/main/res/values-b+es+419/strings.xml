@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demy</string>
+    <string name="tablet_only_title">Dispositivo no soportado</string>
+    <string name="tablet_only_message">Demy for Admins ha sido diseñada y optimizada exclusivamente para tablets en orientación horizontal, con el fin de ofrecer una interfaz más amplia y aprovechar plenamente las funcionalidades del panel administrativo.\n\nPara garantizar una experiencia adecuada, te invitamos a acceder desde una tablet en orientación horizontal.\n\nGracias,\nEl equipo de Demy</string>
+    <string name="accept">Aceptar</string>
+</resources>

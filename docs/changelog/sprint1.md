@@ -1,0 +1,1 @@
+*Sprint 1 is not finished yet. This changelog will be updated once the sprint is completed.*

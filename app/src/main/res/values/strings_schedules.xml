@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="schedules_screen_title">Organize Class Time by Academic Cycle</string>
+    <string name="schedules_screen_description">Create and define weekly schedules by assigning courses, days, hours, teachers, and classrooms to each cycle.</string>
+
+    <string name="schedules_search_label">Search schedules by name</string>
+    <string name="schedules_search_cd">Search schedules</string>
+    <string name="schedules_no_schedules">No schedules available.</string>
+    <string name="schedules_list_sessions_count">Sessions: %1$d</string>
+    <string name="schedules_edit_cd">Edit schedule</string>
+    <string name="schedules_delete_cd">Delete schedule</string>
+
+    <string name="schedules_register_title">Register New Schedule</string>
+    <string name="schedules_edit_title_prefix">Edit: </string>
+    <string name="schedules_name_label">Schedule Name</string>
+    <string name="schedules_create_button">Create Schedule</string>
+    <string name="schedules_update_name_button">Update Name</string>
+
+    <string name="schedules_sessions_count_title">Class Sessions (%1$d)</string>
+    <string name="schedules_no_sessions">No sessions registered for this schedule.</string>
+    <string name="schedules_session_add_title">Add New Class Session</string>
+    <string name="schedules_session_add_button">Add Session to Schedule</string>
+    <string name="schedules_session_add_cd">Add Session</string>
+    <string name="schedules_session_delete_cd">Delete Session</string>
+
+    <string name="schedules_day_label">Day of the Week</string>
+    <string name="schedules_time_start_label">Start Time</string>
+    <string name="schedules_time_end_label">End Time</string>
+    <string name="schedules_course_label">Available Course</string>
+    <string name="schedules_classroom_label">Classroom</string>
+    <string name="schedules_teacher_label">Teacher</string>
+
+    <string name="schedules_session_classroom_prefix">Classroom: %1$s</string>
+    <string name="schedules_session_teacher_prefix">Teacher: %1$s</string>
+
+    <string name="schedules_viewer_dropdown_label">Selected Schedule</string>
+    <string name="schedules_viewer_dropdown_cd">Expand Schedules</string>
+    <string name="schedules_viewer_no_schedule">Loading or no schedule found.</string>
+    <string name="schedules_viewer_time_col_header">Time</string>
+
+    <string name="schedules_viewer_screen_title">Visualize Your Academys Weekly Schedules</string>
+    <string name="schedules_viewer_screen_description">Select a created weekly schedule to view details of assigned teachers, courses, and classrooms.</string>
+
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pantalla principal -->
+    <string name="enrollments_screen_title">Gestionar Matrículas de Estudiantes</string>
+    <string name="enrollments_screen_description">Registra, actualiza y administra las matrículas de los estudiantes en cada periodo académico.</string>
+    <!-- Formulario -->
+    <string name="enrollments_registration_title">Registrar nueva matrícula</string>
+    <string name="enrollments_edit_title_prefix">Editar matrícula N° </string>
+
+    <string name="enrollments_student_label">Estudiante</string>
+    <string name="enrollments_period_label">Periodo académico</string>
+    <string name="enrollments_schedule_label">Horario</string>
+    <string name="enrollments_amount_label">Monto</string>
+    <string name="enrollments_currency_label">Moneda</string>
+    <string name="enrollments_payment_status_label">Estado de pago</string>
+    <string name="enrollments_enrollment_status_label">Estado de matrícula</string>
+
+    <string name="enrollments_register_button">Registrar matrícula</string>
+    <string name="enrollments_action_save_changes">Guardar cambios</string>
+    <string name="enrollments_action_cancel">Cancelar</string>
+
+    <!-- Lista -->
+    <string name="enrollments_search_label">Buscar matrícula...</string>
+    <string name="enrollments_search_cd">Campo de búsqueda de matrículas</string>
+
+    <string name="enrollments_period_prefix">Periodo:</string>
+    <string name="enrollments_edit_cd">Editar matrícula</string>
+    <string name="enrollments_delete_cd">Eliminar matrícula</string>
+
+    <!-- Errores -->
+    <string name="enrollments_error_load_failed">Error al cargar las matrículas.</string>
+    <string name="enrollments_error_save_failed">Error al guardar la matrícula.</string>
+    <string name="enrollments_error_delete_failed">Error al eliminar la matrícula.</string>
+
+
+    <!-- Estados de pago -->
+    <string name="enrollments_payment_status_failed">Fallido</string>
+    <string name="enrollments_payment_status_paid">Pagado</string>
+    <string name="enrollments_payment_status_pending">Pendiente</string>
+    <string name="enrollments_payment_status_refunding">Reembolsado</string>
+
+    <!-- Estados de matrícula -->
+    <string name="enrollment_status_active">Activa</string>
+    <string name="students_status_finalized">Finalizada</string>
+    <string name="enrollment_status_withdraw">Retirada</string>
+</resources>

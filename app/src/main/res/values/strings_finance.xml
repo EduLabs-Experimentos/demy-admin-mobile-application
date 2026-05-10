@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Finance Screen -->
+    <string name="finance_screen_title">Financial Management</string>
+    <string name="finance_screen_description">Register and manage financial transactions</string>
+
+    <!-- Finance Registration Form -->
+    <string name="finance_register_title">Register Transaction</string>
+    <string name="finance_register_description">Fill in the transaction details</string>
+    <string name="finance_type">Type</string>
+    <string name="finance_category">Category</string>
+    <string name="finance_method">Method</string>
+    <string name="finance_amount">Amount</string>
+    <string name="finance_currency">Currency</string>
+    <string name="finance_date">Date</string>
+    <string name="finance_description">Description</string>
+    <string name="finance_register_button">Register Transaction</string>
+    <string name="finance_register_button_loading">Registering…</string>
+
+    <!-- Transaction Types -->
+    <string name="finance_type_income">Income</string>
+    <string name="finance_type_expense">Expense</string>
+
+    <!-- Transaction Categories -->
+    <string name="finance_category_student_enrollment">Student Enrollment</string>
+    <string name="finance_category_student_monthly_fee">Student Monthly Fee</string>
+    <string name="finance_category_student_one_time_payment">Student One Time Payment</string>
+    <string name="finance_category_teacher_salary">Teacher Salary</string>
+    <string name="finance_category_office_supplies">Office Supplies</string>
+    <string name="finance_category_other">Other</string>
+
+    <!-- Payment Methods -->
+    <string name="finance_method_cash">Cash</string>
+    <string name="finance_method_debit_card">Debit Card</string>
+    <string name="finance_method_credit_card">Credit Card</string>
+    <string name="finance_method_bank_transfer">Bank Transfer</string>
+    <string name="finance_method_wallet">Wallet</string>
+    <string name="finance_method_other">Other</string>
+
+    <!-- Currencies -->
+    <string name="finance_currency_pen">Soles</string>
+    <string name="finance_currency_usd">Dollars</string>
+
+    <!-- Finance Messages -->
+    <string name="finance_register_success">Transaction registered successfully</string>
+    <string name="finance_error_register_failed">Failed to register transaction</string>
+    <string name="finance_error_load_failed">Failed to load transactions</string>
+    <string name="finance_validation_required_fields">Please fill in all required fields</string>
+
+    <!-- Finance Analytics -->
+    <string name="finance_analytics_title">Financial Analytics</string>
+    <string name="finance_analytics_description">Visual insights of your financial data</string>
+    <string name="finance_income_expense_trend">Income vs Expense Trend</string>
+    <string name="finance_expense_categories">Top Expense Categories</string>
+    <string name="finance_loading_data">Loading financial data…</string>
+    <string name="finance_no_data">No data available to display</string>
+
+    <!-- Chart Legends -->
+    <string name="finance_legend_income">Income</string>
+    <string name="finance_legend_expense">Expense</string>
+</resources>

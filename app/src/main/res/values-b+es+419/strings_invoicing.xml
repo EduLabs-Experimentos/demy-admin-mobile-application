@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="invoices_screen_title">Gestión de Facturas</string>
+    <string name="invoices_screen_description">Busque una cuenta de facturación para ver y gestionar sus facturas asociadas.</string>
+
+    <!-- Search Bar -->
+    <string name="invoices_search_label">Dni del Estudiante</string>
+    <string name="invoices_search_button_description">Buscar Facturas</string>
+
+    <!-- Search Logic Messages -->
+    <string name="invoices_search_validation_empty">Por favor, ingrese un DNI de estudiante.</string>
+    <string name="invoices_search_error">Error: %1$s</string>
+
+    <!-- Mark as Paid Logic Messages -->
+    <string name="invoices_mark_as_paid_success">Factura correctamente marcada como pagada.</string>
+    <string name="invoices_mark_as_paid_error">Error al actualizar: %1$s</string>
+
+    <!-- InvoicesListPanel -->
+    <string name="invoices_list_title">Facturas Encontradas</string>
+    <string name="invoices_list_description">Resultados de la búsqueda para la cuenta de facturación del estudiante.</string>
+    <string name="invoices_list_empty_message">No se encontraron facturas para esta cuenta o no se ha realizado una búsqueda.</string>
+    <string name="invoices_list_count_label">%1$d factura(s) encontrada(s)</string>
+    <!-- AddInvoiceDialog -->
+    <string name="invoice_dialog_title">Añadir Nueva Factura</string>
+    <string name="invoice_dialog_description_label">Descripción</string>
+    <string name="invoice_dialog_amount_label">Monto</string>
+    <string name="invoice_dialog_currency_label">Moneda</string>
+    <string name="invoice_dialog_type_label">Tipo de Factura</string>
+    <string name="invoice_dialog_due_date_label">Fecha de Vencimiento</string>
+    <string name="invoice_dialog_due_date_placeholder">Seleccione una fecha</string>
+    <string name="invoice_dialog_confirm_button">Confirmar</string>
+    <string name="invoice_dialog_cancel_button">Cancelar</string>
+    <string name="invoice_dialog_date_picker_ok">OK</string>
+    <string name="invoice_dialog_date_picker_cancel">Cancelar</string>
+    <string name="invoice_dialog_date_picker_icon_description">Seleccionar fecha</string>
+
+
+    <!-- Invoice Type Options -->
+    <string name="invoice_type_student_enrollment">Matrícula de Estudiante</string>
+    <string name="invoice_type_student_monthly_fee">Cuota Mensual</string>
+    <string name="invoice_type_student_one_time_payment">Pago Único</string>
+    <string name="invoice_type_other">Otro</string>
+
+    <!-- Delete Logic Messages -->
+    <string name="invoices_delete_success">Factura eliminada exitosamente.</string>
+    <string name="invoices_delete_error">Error al eliminar, no se puede eliminar una factura pagada</string>
+
+    <!-- Invoice Card -->
+    <string name="invoice_due_date_label">Vence:</string>
+
+</resources>

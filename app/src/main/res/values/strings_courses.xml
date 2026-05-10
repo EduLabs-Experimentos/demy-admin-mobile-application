@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="courses_screen_title">Manage Academic Courses Information</string>
+<string name="courses_screen_description">Manage, organize, and keep your academy educational offering up to date.</string>
+
+<string name="courses_search_label">Search courses</string>
+<string name="courses_search_cd">Search</string>
+<string name="courses_code_prefix">Code: </string>
+<string name="courses_description_prefix">Description: </string>
+<string name="courses_edit_cd">Edit course</string>
+<string name="courses_delete_cd">Delete course</string>
+
+<string name="courses_registration_title">Register New Course</string>
+<string name="courses_edit_title_prefix">Edit Course: </string>
+<string name="courses_name_label">Course Name</string>
+<string name="courses_name_cd">Course Name</string>
+<string name="courses_code_label">Course Code</string>
+<string name="courses_code_cd">Course Code</string>
+<string name="courses_description_label">Description</string>
+
+<string name="courses_register_button">Register Course</string>
+<string name="courses_action_save_changes">Save Changes</string>
+<string name="courses_action_cancel">Cancel</string>
+<string name="courses_action_delete">Delete</string>
+
+</resources>

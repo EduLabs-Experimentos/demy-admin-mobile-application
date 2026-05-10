@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Billing Search Panel -->
+    <string name="billing_search_title">Buscar Cuentas</string>
+    <string name="billing_search_description">Encuentre y gestione las cuentas de facturación</string>
+    <string name="billing_search_placeholder">Buscar por DNI</string>
+    <string name="billing_not_found">No se encontraron cuentas</string>
+    <string name="billing_found_count">%1$d cuenta(s) encontrada(s)</string>
+    <string name="billing_edit_action_description">Editar cuenta de facturación</string>
+    <string name="billing_delete_action_description">Eliminar cuenta de facturación</string>
+    <string name="billing_student_id_label">ID Estudiante: %1$s</string>
+    <string name="billing_academy_id_label">ID Academia: %1$s</string>
+
+    <!-- Billing Registration Form -->
+    <string name="billing_register_title">Registrar Nueva Cuenta</string>
+    <string name="billing_register_description">Complete los datos para registrar una nueva cuenta de facturación</string>
+    <string name="billing_student_id">ID del Estudiante</string>
+    <string name="billing_register_button">Registrar Cuenta</string>
+    <string name="billing_register_button_loading">Registrando…</string>
+
+    <!-- Billing Screen -->
+    <string name="billing_screen_title">Maneja la información de facturación</string>
+    <string name="billing_screen_description">Administre el registro de nuevas cuentas y consulte el directorio completo.</string>
+    <string name="billing_register_success">¡Cuenta de facturación registrada exitosamente!</string>
+
+    <!-- Validation Messages -->
+    <string name="billing_validation_required_fields">Por favor, ingrese el ID del estudiante</string>
+
+    <!-- Error Messages -->
+    <string name="billing_error_register_failed">Error al registrar la cuenta</string>
+    <string name="billing_error_load_failed">Error al cargar las cuentas</string>
+
+    <!-- Billing Details Screen & ViewModel -->
+    <string name="billing_details_title">Detalles de Cuenta</string>
+    <string name="billing_details_back_button_description">Volver</string>
+    <string name="billing_details_error_message">Error: %1$s</string>
+    <string name="billing_details_account_id">ID de Cuenta: %1$s</string>
+    <string name="billing_dni_number_label">DNI: %1$s</string>
+    <string name="billing_details_invoices_title">Facturas (%1$d)</string>
+    <string name="billing_details_no_invoices">Esta cuenta aún no tiene facturas.</string>
+    <string name="billing_details_invoice_item_label">- Factura #%1$s: %2$s %3$s (%4$s)</string>
+    <string name="billing_details_add_invoice_button">Añadir Nueva Factura</string>
+    <string name="billing_details_error_unknown">Error desconocido</string>
+
+    <!-- Add Invoice Dialog (from ViewModel) -->
+    <string name="billing_add_invoice_validation_empty">Por favor, complete todos los campos.</string>
+    <string name="billing_add_invoice_validation_invalid_amount">El monto ingresado no es un número válido.</string>
+    <string name="billing_add_invoice_success">¡Factura añadida con éxito!</string>
+    <string name="billing_add_invoice_error">Error al guardar: %1$s</string>
+    </resources>

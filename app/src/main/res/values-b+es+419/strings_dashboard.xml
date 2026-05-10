@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dashboard Screen -->
+    <string name="dashboard_academy_label">Academia</string>
+    <string name="dashboard_total_income_label">Ingresos Totales</string>
+    <string name="dashboard_total_expenses_label">Gastos Totales</string>
+    <string name="dashboard_total_balance_label">Balance Total</string>
+    <string name="dashboard_loading">Cargando…</string>
+    <string name="dashboard_income_expense_trend">Tendencia de Ingresos vs Gastos</string>
+    <string name="dashboard_expense_categories">Categorías de Gastos</string>
+    <string name="dashboard_no_data">No hay datos disponibles</string>
+    <string name="dashboard_no_expense_data">No hay datos de gastos disponibles</string>
+    <string name="dashboard_error_loading">Error al cargar el dashboard</string>
+
+    <!-- Dashboard Bottom Row -->
+    <string name="dashboard_teachers_students_title">Profesores y Alumnos</string>
+    <string name="dashboard_total_teachers">Total de Profesores</string>
+    <string name="dashboard_total_students">Total de Alumnos</string>
+
+    <string name="dashboard_enrollments_schedules_title">Matrículas y Horarios</string>
+    <string name="dashboard_active_enrollments">Matrículas Activas</string>
+    <string name="dashboard_available_schedules">Horarios Disponibles</string>
+
+    <string name="dashboard_courses_classrooms_title">Cursos y Aulas</string>
+    <string name="dashboard_total_courses">Total de Cursos</string>
+    <string name="dashboard_total_classrooms">Total de Aulas</string>
+</resources>

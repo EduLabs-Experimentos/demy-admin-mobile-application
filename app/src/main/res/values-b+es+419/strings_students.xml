@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="students_screen_title">Gestionar Información de Estudiantes</string>
+    <string name="students_screen_description">Registra, edita y organiza todos los registros de estudiantes de tu academia.</string>
+
+    <!-- Student List -->
+    <string name="students_search_label">Buscar estudiantes</string>
+    <string name="students_search_placeholder">Buscar</string>
+    <string name="students_dni_label">DNI</string>
+    <string name="students_email_label">Correo</string>
+    <string name="students_phone_label">Número</string>
+    <string name="students_edit">Editar estudiante</string>
+    <string name="students_delete">Eliminar estudiante</string>
+
+    <!-- Register / Edit Student -->
+    <string name="students_register_title">Registrar Nuevo Estudiante</string>
+    <string name="students_edit_title">Editar Estudiante: %1$s</string>
+    <string name="students_name_label">Nombre</string>
+    <string name="students_lastname_label">Apellido</string>
+    <string name="students_dni_input">DNI</string>
+    <string name="students_email_input">Correo Electrónico</string>
+    <string name="students_phone_input">Teléfono</string>
+    <string name="students_country_code">Código</string>
+    <string name="students_sex_label">Sexo</string>
+    <string name="students_birthdate_label">Fecha Nacimiento (A-M-d)</string>
+    <string name="students_street_label">Calle</string>
+    <string name="students_district_label">Distrito</string>
+    <string name="students_province_label">Provincia</string>
+    <string name="students_department_label">Departamento</string>
+
+    <!-- Buttons -->
+    <string name="students_register_button">Registrar Estudiante</string>
+    <string name="students_save_button">Guardar Cambios</string>
+    <string name="students_cancel_button">Cancelar</string>
+
+    <!-- States -->
+    <string name="students_loading">Cargando…</string>
+    <string name="students_error_message">Ocurrió un error al registrar el estudiante</string>
+
+    <!-- Sex -->
+    <string name="students_sex_male">M</string>
+    <string name="students_sex_female">F</string>
+</resources>

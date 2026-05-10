@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Screen Header -->
+    <string name="invoices_screen_title">Invoice Management</string>
+    <string name="invoices_screen_description">Search for a billing account to view and manage its associated invoices.</string>
+
+    <!-- Search Bar -->
+    <string name="invoices_search_label">Student Dni</string>
+    <string name="invoices_search_button_description">Search Invoices</string>
+
+    <!-- Search Logic Messages -->
+    <string name="invoices_search_validation_empty">Please enter a student Dni.</string>
+    <string name="invoices_search_error">Error: %1$s</string>
+
+    <!-- Mark as Paid Logic Messages -->
+    <string name="invoices_mark_as_paid_success">Invoice successfully marked as paid.</string>
+    <string name="invoices_mark_as_paid_error">Error updating: %1$s</string>
+
+    <!-- InvoicesListPanel -->
+    <string name="invoices_list_title">Invoices Found</string>
+    <string name="invoices_list_description">Search results for the student billing account.</string>
+    <string name="invoices_list_empty_message">No invoices found for this account, or no search has been performed.</string>
+    <string name="invoices_list_count_label">%1$d invoice(s) found</string>
+
+    <!-- AddInvoiceDialog -->
+    <string name="invoice_dialog_title">Add New Invoice</string>
+    <string name="invoice_dialog_description_label">Description</string>
+    <string name="invoice_dialog_amount_label">Amount</string>
+    <string name="invoice_dialog_currency_label">Currency</string>
+    <string name="invoice_dialog_type_label">Invoice Type</string>
+    <string name="invoice_dialog_due_date_label">Due Date</string>
+    <string name="invoice_dialog_due_date_placeholder">Select a date</string>
+    <string name="invoice_dialog_confirm_button">Confirm</string>
+    <string name="invoice_dialog_cancel_button">Cancel</string>
+    <string name="invoice_dialog_date_picker_ok">OK</string>
+    <string name="invoice_dialog_date_picker_cancel">Cancel</string>
+    <string name="invoice_dialog_date_picker_icon_description">Select date</string>
+
+    <!-- Invoice Type Options -->
+    <string name="invoice_type_student_enrollment">Student Enrollment</string>
+    <string name="invoice_type_student_monthly_fee">Monthly Fee</string>
+    <string name="invoice_type_student_one_time_payment">One-Time Payment</string>
+    <string name="invoice_type_other">Other</string>
+
+    <!-- Delete Logic Messages -->
+    <string name="invoices_delete_success">Invoice deleted successfully.</string>
+    <string name="invoices_delete_error">Error deleting invoice, cannot delete paid invoice</string>
+
+    <!-- Invoice Card -->
+    <string name="invoice_due_date_label">Due:</string>
+
+</resources>
+

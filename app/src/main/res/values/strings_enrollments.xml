@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Screen -->
+    <string name="enrollments_screen_title">Manage Student Enrollments</string>
+    <string name="enrollments_screen_description">Register, update, and manage student enrollments for each academic period.</string>
+    <!-- Form -->
+    <string name="enrollments_registration_title">Register new enrollment</string>
+    <string name="enrollments_edit_title_prefix">Edit enrollment No. </string>
+
+    <string name="enrollments_student_label">Student</string>
+    <string name="enrollments_period_label">Academic period</string>
+    <string name="enrollments_schedule_label">Schedule</string>
+    <string name="enrollments_amount_label">Amount</string>
+    <string name="enrollments_currency_label">Currency</string>
+    <string name="enrollments_payment_status_label">Payment status</string>
+    <string name="enrollments_enrollment_status_label">Enrollment status</string>
+
+    <string name="enrollments_register_button">Register enrollment</string>
+    <string name="enrollments_action_save_changes">Save changes</string>
+    <string name="enrollments_action_cancel">Cancel</string>
+
+    <!-- List -->
+    <string name="enrollments_search_label">Search enrollment...</string>
+    <string name="enrollments_search_cd">Enrollment search field</string>
+
+    <string name="enrollments_period_prefix">Period:</string>
+    <string name="enrollments_edit_cd">Edit enrollment</string>
+    <string name="enrollments_delete_cd">Delete enrollment</string>
+
+    <!-- Errors -->
+    <string name="enrollments_error_load_failed">Failed to load enrollments.</string>
+    <string name="enrollments_error_save_failed">Failed to save enrollment.</string>
+    <string name="enrollments_error_delete_failed">Failed to delete enrollment.</string>
+
+    <!-- Payment Status -->
+    <string name="enrollments_payment_status_failed">Failed</string>
+    <string name="enrollments_payment_status_paid">Paid</string>
+    <string name="enrollments_payment_status_pending">Pending</string>
+    <string name="enrollments_payment_status_refunding">Refunded</string>
+
+    <!-- Enrollment Status -->
+    <string name="enrollment_status_active">Active</string>
+    <string name="students_status_finalized">Finalized</string>
+    <string name="enrollment_status_withdraw">Withdrawn</string>
+</resources>

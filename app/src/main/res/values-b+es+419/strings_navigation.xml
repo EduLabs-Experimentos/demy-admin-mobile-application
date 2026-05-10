@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Top Bar Titles -->
+    <string name="nav_title_dashboard">Panel de Control</string>
+    <string name="nav_title_teachers">Gestión de Profesores</string>
+    <string name="nav_title_students">Gestión de Estudiantes</string>
+    <string name="nav_title_billing">Cobranzas</string>
+    <string name="nav_title_invoices">Facturas</string>
+    <string name="nav_title_finance">Finanzas</string>
+    <string name="nav_title_accounting">Contabilidad</string>
+    <string name="nav_title_profile">Perfil</string>
+    <string name="nav_title_settings">Configuración</string>
+    <string name="nav_title_help">Ayuda</string>
+    <string name="nav_title_default">Demy Admins</string>
+
+    <!-- Drawer Section Headers -->
+    <string name="drawer_section_overview">Resumen</string>
+    <string name="drawer_section_academy">Academia</string>
+    <string name="drawer_section_classes">Clases</string>
+    <string name="drawer_section_management">Administración</string>
+    <string name="drawer_section_general">General</string>
+
+    <!-- Drawer Destination Labels -->
+    <string name="drawer_destination_dashboard">Panel de Control</string>
+    <string name="drawer_destination_teachers">Profesores</string>
+    <string name="drawer_destination_students">Estudiantes</string>
+    <string name="drawer_destination_periods">Períodos</string>
+    <string name="drawer_destination_classrooms">Salones</string>
+    <string name="drawer_destination_courses">Cursos</string>
+    <string name="drawer_destination_schedules">Horarios</string>
+    <string name="drawer_destination_enrollments">Matrículas</string>
+    <string name="drawer_destination_scheduling">Programación</string>
+    <string name="drawer_destination_billing">Cobranzas</string>
+    <string name="drawer_destination_invoices">Facturas</string>
+    <string name="drawer_destination_finance">Finanzas</string>
+    <string name="drawer_destination_accounting">Contabilidad</string>
+    <string name="drawer_destination_settings">Configuración</string>
+    <string name="drawer_destination_help">Ayuda</string>
+    <string name="drawer_destination_logout">Cerrar Sesión</string>
+</resources>
+

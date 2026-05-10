@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="classrooms_screen_title">Gestiona los espacios físicos para clases</string>
+    <string name="classrooms_screen_description">Administre la capacidad y ubicación de las aulas disponibles en la academia.</string>
+
+    <string name="classrooms_search_label">Buscar aulas por código</string>
+    <string name="classrooms_search_cd">Buscar</string>
+    <string name="classrooms_campus_prefix">Sede: </string>
+    <string name="classrooms_capacity_prefix">Capacidad: %1$d personas</string>
+    <string name="classrooms_edit_cd">Editar aula</string>
+    <string name="classrooms_delete_cd">Eliminar aula</string>
+
+    <string name="classrooms_registration_title">Registrar Nueva Aula</string>
+    <string name="classrooms_edit_title_prefix">Editar Aula: </string>
+    <string name="classrooms_code_label">Código de Aula</string>
+    <string name="classrooms_code_cd">Código de Aula</string>
+    <string name="classrooms_capacity_label">Capacidad</string>
+    <string name="classrooms_capacity_cd">Capacidad</string>
+    <string name="classrooms_campus_label">Sede</string>
+    <string name="classrooms_campus_cd">Sede</string>
+
+    <string name="classrooms_register_button">Registrar Aula</string>
+    <string name="classrooms_action_save_changes">Guardar Cambios</string>
+    <string name="classrooms_action_cancel">Cancelar</string>
+</resources>

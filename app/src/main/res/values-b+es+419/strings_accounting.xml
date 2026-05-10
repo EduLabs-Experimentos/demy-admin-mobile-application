@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accounting Screen -->
+    <string name="accounting_screen_title">Gestión Contable</string>
+    <string name="accounting_screen_description">Visualiza y administra todas las transacciones financieras</string>
+
+    <!-- Search Section -->
+    <string name="accounting_search_title">Buscar transacciones</string>
+    <string name="accounting_search_description">Filtra transacciones por tipo, categoría, método o descripción</string>
+    <string name="accounting_search_placeholder">Buscar…</string>
+
+    <!-- Export Section -->
+    <string name="accounting_export_title">Exportar registros</string>
+    <string name="accounting_export_description">Descarga los datos de transacciones</string>
+    <string name="accounting_export_pdf">Exportar a PDF</string>
+    <string name="accounting_export_excel">Exportar a Excel</string>
+    <string name="accounting_export_success_pdf">PDF exportado exitosamente a Descargas</string>
+    <string name="accounting_export_success_excel">Excel exportado exitosamente a Descargas</string>
+    <string name="accounting_export_error">Error al exportar archivo</string>
+
+    <!-- Export Confirmation Dialog -->
+    <string name="accounting_export_confirm_title">Exportar Transacciones</string>
+    <string name="accounting_export_confirm_message_pdf">¿Deseas exportar todas las transacciones a PDF? El archivo se guardará en Descargas.</string>
+    <string name="accounting_export_confirm_message_excel">¿Deseas exportar todas las transacciones a Excel? El archivo se guardará en Descargas.</string>
+    <string name="accounting_export_action_confirm">Exportar</string>
+    <string name="accounting_export_action_cancel">Cancelar</string>
+    <string name="accounting_export_loading">Exportando…</string>
+
+    <!-- Table Headers -->
+    <string name="accounting_table_number">N°</string>
+    <string name="accounting_table_type">Tipo</string>
+    <string name="accounting_table_category">Categoría</string>
+    <string name="accounting_table_method">Método</string>
+    <string name="accounting_table_amount">Monto</string>
+    <string name="accounting_table_date">Fecha</string>
+    <string name="accounting_table_description">Descripción</string>
+    <string name="accounting_table_actions">Acciones</string>
+
+    <!-- Actions -->
+    <string name="accounting_action_edit">Editar</string>
+    <string name="accounting_action_delete">Eliminar</string>
+
+    <!-- Empty State -->
+    <string name="accounting_empty_state">No se encontraron transacciones</string>
+    <string name="accounting_empty_search">No hay transacciones que coincidan con tu búsqueda</string>
+
+    <!-- Transaction Types -->
+    <string name="accounting_type_income">Ingreso</string>
+    <string name="accounting_type_expense">Egreso</string>
+
+    <!-- Transaction Categories -->
+    <string name="accounting_category_student_enrollment">Matrícula de Estudiante</string>
+    <string name="accounting_category_student_monthly_fee">Mensualidad de Estudiante</string>
+    <string name="accounting_category_student_one_time_payment">Pago Único de Estudiante</string>
+    <string name="accounting_category_teacher_salary">Salario de Profesor</string>
+    <string name="accounting_category_office_supplies">Útiles de Oficina</string>
+    <string name="accounting_category_other">Otro</string>
+
+    <!-- Payment Methods -->
+    <string name="accounting_method_cash">Efectivo</string>
+    <string name="accounting_method_debit_card">Tarjeta de Débito</string>
+    <string name="accounting_method_credit_card">Tarjeta de Crédito</string>
+    <string name="accounting_method_bank_transfer">Transferencia Bancaria</string>
+    <string name="accounting_method_wallet">Billetera</string>
+    <string name="accounting_method_other">Otro</string>
+
+    <!-- Currencies -->
+    <string name="accounting_currency_pen">PEN</string>
+    <string name="accounting_currency_usd">USD</string>
+
+    <!-- Edit Dialog -->
+    <string name="accounting_edit_dialog_title">Editar Transacción</string>
+    <string name="accounting_edit_dialog_description">Actualiza la información de la transacción</string>
+    <string name="accounting_edit_field_type">Tipo</string>
+    <string name="accounting_edit_field_category">Categoría</string>
+    <string name="accounting_edit_field_method">Método</string>
+    <string name="accounting_edit_field_amount">Monto</string>
+    <string name="accounting_edit_field_currency">Moneda</string>
+    <string name="accounting_edit_field_date">Fecha</string>
+    <string name="accounting_edit_field_description">Descripción</string>
+    <string name="accounting_edit_action_save">Guardar</string>
+    <string name="accounting_edit_action_cancel">Cancelar</string>
+
+    <!-- Delete Confirmation Dialog -->
+    <string name="accounting_delete_dialog_title">Eliminar Transacción</string>
+    <string name="accounting_delete_dialog_message">¿Estás seguro de que deseas eliminar esta transacción? Esta acción no se puede deshacer.</string>
+    <string name="accounting_delete_action_confirm">Eliminar</string>
+    <string name="accounting_delete_action_cancel">Cancelar</string>
+</resources>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_label_email">Email</string>
+    <string name="auth_icon_email">Email Icon</string>
+    <string name="auth_label_password">Password</string>
+    <string name="auth_icon_password">Password Icon</string>
+    <string name="sign_in_text_btn_forgot_password">Forgot password?</string>
+    <string name="sign_in_btn_sign_in">Sign In</string>
+    <string name="sign_in_icon_sign_in">Sign In Icon</string>
+    <string name="sign_in_header_title">Welcome back</string>
+    <string name="sign_in_header_subtitle">Sign in to continue</string>
+    <string name="sign_in_footer_text">"Don't have an account? "</string>
+    <string name="sign_in_footer_action_text">Sign up</string>
+    <string name="sign_up_header_title">Get started now</string>
+    <string name="sign_up_header_subtitle">Create a new account</string>
+    <string name="sign_up_footer_text">"Already have an account? "</string>
+    <string name="sign_up_footer_action_text">Sign in</string>
+    <string name="sign_up_btn_sign_up">Sign Up</string>
+    <string name="sign_up_icon_sign_up">Sign Up Icon</string>
+    <string name="verify_account_header_title">Verify your account</string>
+    <string name="verify_account_header_subtitle">Check your email</string>
+    <string name="verify_account_btn_verify">Verify</string>
+    <string name="verify_account_icon_verify">Verify Icon</string>
+    <string name="complete_account_header_title">We\'re almost done</string>
+    <string name="complete_account_header_subtitle">Complete your profile to finish your account</string>
+    <string name="complete_account_first_name">First name</string>
+    <string name="complete_account_last_name">Last name</string>
+    <string name="complete_account_country_code">Country code</string>
+    <string name="complete_account_phone_number">Phone number</string>
+    <string name="complete_account_dni">DNI</string>
+    <string name="complete_account_icon_complete_account">Complete Account Icon</string>
+    <string name="complete_account_btn_complete_account">Complete Account</string>
+    <string name="set_up_academy_academy_name">Academy name</string>
+    <string name="set_up_academy_academy_description">Academy description</string>
+    <string name="set_up_academy_street">Street</string>
+    <string name="set_up_academy_district">District</string>
+    <string name="set_up_academy_province">Province</string>
+    <string name="set_up_academy_department">Department</string>
+    <string name="set_up_academy_email">Email</string>
+    <string name="set_up_academy_country_code">Country code</string>
+    <string name="set_up_academy_phone">Phone</string>
+    <string name="set_up_academy_ruc">RUC</string>
+    <string name="set_up_academy_icon">Academy Icon</string>
+    <string name="set_up_academy_button">Create Academy</string>
+    <string name="set_up_academy_title">Set up your academy</string>
+    <string name="set_up_academy_subtitle">Complete the information to create your academy profile</string>
+</resources>

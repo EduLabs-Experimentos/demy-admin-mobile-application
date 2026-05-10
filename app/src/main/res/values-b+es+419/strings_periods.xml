@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="periods_screen_title">Gestionar Periodos Académicos</string>
+    <string name="periods_screen_description">Administra el registro de nuevos períodos y consulta el listado completo.</string>
+    <!-- Panel de Búsqueda de Períodos Académicos -->
+    <string name="periods_search_title">Buscar Períodos Académicos</string>
+    <string name="periods_search_description">Encuentra y gestiona los períodos académicos registrados</string>
+    <string name="periods_search_placeholder">Buscar por nombre o fecha</string>
+    <string name="periods_search_input_placeholder">Ingrese nombre o fecha…</string>
+    <string name="periods_not_found">No se encontraron períodos académicos</string>
+    <string name="periods_found_count">%1$d período(s) académico(s) encontrado(s)</string>
+    <string name="period_edit">Editar período</string>
+    <string name="period_delete">Eliminar período</string>
+    <string name="period_search">Buscar</string>
+
+    <!-- Formulario de Registro de Períodos -->
+    <string name="periods_register_title">Registrar Nuevo Período</string>
+    <string name="periods_register_description">Complete los datos para registrar un nuevo período académico</string>
+    <string name="periods_name">Nombre del Período</string>
+    <string name="periods_start_date">Fecha de Inicio (yyyy-MM-dd)</string>
+    <string name="periods_end_date">Fecha de Fin (yyyy-MM-dd)</string>
+    <string name="periods_is_active">¿Activo?</string>
+    <string name="periods_register_button">Registrar Período</string>
+    <string name="periods_register_button_loading">Registrando…</string>
+    <string name="periods_save_changes_button">Guardar Cambios</string>
+    <string name="periods_cancel_button">Cancelar</string>
+
+    <!-- Pantalla de Períodos Académicos -->
+    <string name="periods_register_success">¡Período académico registrado exitosamente!</string>
+
+    <!-- Mensajes de Validación -->
+    <string name="periods_validation_required_fields">Por favor completa todos los campos requeridos</string>
+
+    <!-- Mensajes de Error -->
+    <string name="periods_error_register_failed">Error al registrar el período académico</string>
+    <string name="periods_error_load_failed">Error al cargar los períodos</string>
+
+    <!-- Estado y Etiquetas -->
+    <string name="periods_status_active">Activo</string>
+    <string name="periods_status_inactive">Inactivo</string>
+    <string name="periods_status_label">Estado: </string>
+    <string name="periods_date_range_label">%1$s – %2$s</string>
+    <string name="periods_start_date_label">Fecha de inicio: </string>
+    <string name="periods_end_date_label">Fecha de fin: </string>
+</resources>

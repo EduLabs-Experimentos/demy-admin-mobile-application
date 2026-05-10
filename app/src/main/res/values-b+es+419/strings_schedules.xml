@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="schedules_screen_title">Organiza y gestiona los horarios de clases de tua academia</string>
+    <string name="schedules_screen_description">Cree y defina horarios semanales asignando cursos, días, horas, profesores y aulas a cada horario.</string>
+
+    <string name="schedules_search_label">Buscar horarios por nombre</string>
+    <string name="schedules_search_cd">Buscar horarios</string>
+    <string name="schedules_no_schedules">No hay horarios disponibles.</string>
+    <string name="schedules_list_sessions_count">Sesiones: %1$d</string>
+    <string name="schedules_edit_cd">Editar horario</string>
+    <string name="schedules_delete_cd">Eliminar horario</string>
+
+    <string name="schedules_register_title">Registrar Nuevo Horario</string>
+    <string name="schedules_edit_title_prefix">Editar: </string>
+    <string name="schedules_name_label">Nombre del Horario</string>
+    <string name="schedules_create_button">Crear Horario</string>
+    <string name="schedules_update_name_button">Actualizar Nombre</string>
+
+    <string name="schedules_sessions_count_title">Sesiones de Clase (%1$d)</string>
+    <string name="schedules_no_sessions">No hay sesiones registradas para este horario.</string>
+    <string name="schedules_session_add_title">Añadir Nueva Sesión de Clase</string>
+    <string name="schedules_session_add_button">Añadir Sesión al Horario</string>
+    <string name="schedules_session_add_cd">Añadir Sesión</string>
+    <string name="schedules_session_delete_cd">Eliminar Sesión</string>
+
+    <string name="schedules_day_label">Día de la Semana</string>
+    <string name="schedules_time_start_label">Hora Inicio</string>
+    <string name="schedules_time_end_label">Hora Fin</string>
+    <string name="schedules_course_label">Curso Disponible</string>
+    <string name="schedules_classroom_label">Aula</string>
+    <string name="schedules_teacher_label">Profesor</string>
+
+    <string name="schedules_session_classroom_prefix">Aula: %1$s</string>
+    <string name="schedules_session_teacher_prefix">Prof: %1$s</string>
+
+    <string name="schedules_viewer_dropdown_label">Horario Seleccionado</string>
+    <string name="schedules_viewer_dropdown_cd">Expandir Horarios</string>
+    <string name="schedules_viewer_no_schedule">Cargando o no se encontró ningún horario.</string>
+    <string name="schedules_viewer_time_col_header">Hora</string>
+
+    <string name="schedules_viewer_screen_title">Visualiza los horarios semanales de tu academia</string>
+    <string name="schedules_viewer_screen_description">Selecciona un horario semanal creado para ver sus detalles de profesores, cursos y aulas asignadas.</string>
+
+
+    <string name="day_monday">Lunes</string>
+    <string name="day_tuesday">Martes</string>
+    <string name="day_wednesday">Miércoles</string>
+    <string name="day_thursday">Jueves</string>
+    <string name="day_friday">Viernes</string>
+    <string name="day_saturday">Sábado</string>
+    <string name="day_sunday">Domingo</string>
+</resources>

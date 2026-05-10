@@ -1,0 +1,30 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Team Discord
+    url: https://discord.gg/6TFrJXD3
+    about: Use this channel to ask questions before opening an issue.
+
+  - name: Contributing Guide
+    url: https://github.com/nistrahq/demy-admins/blob/main/CONTRIBUTING.md
+    about: Learn how to branch, commit, test, and open PRs.
+
+  - name: Code of Conduct
+    url: https://github.com/nistrahq/demy-admins/blob/main/CODE_OF_CONDUCT.md
+    about: Expected standards for communication and collaboration.
+
+  - name: Project Documentation
+    url: https://github.com/nistrahq/demy-admins/tree/main/docs
+    about: Architecture, API (OpenAPI), guides, diagrams.
+
+  - name: Security Policy
+    url: https://github.com/nistrahq/demy-admins/blob/main/SECURITY.md
+    about: Report vulnerabilities privately.
+
+  - name: Project Authors
+    url: https://github.com/nistrahq/demy-admins/blob/main/AUTHORS.md
+    about: Meet the team behind the project.
+
+  - name: Project Roadmap
+    url: https://github.com/nistrahq/demy-admins/tree/main/docs/changelog
+    about: Follow the academic milestones (sprints and deliverables).

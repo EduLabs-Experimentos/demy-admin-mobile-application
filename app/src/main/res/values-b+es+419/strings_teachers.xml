@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Teacher Search Panel -->
+    <string name="teachers_search_title">Buscar Profesores</string>
+    <string name="teachers_search_description">Encuentre y gestione los profesores registrados</string>
+    <string name="teachers_search_placeholder">Buscar por nombre o correo</string>
+    <string name="teachers_search_input_placeholder">Ingrese nombre o correo…</string>
+    <string name="teachers_not_found">No se encontraron profesores</string>
+    <string name="teachers_found_count">%1$d profesor(es) encontrado(s)</string>
+    <string name="teacher_edit">Editar profesor</string>
+    <string name="teacher_delete">Eliminar profesor</string>
+    <string name="teacher_search">Buscar</string>
+
+    <!-- Teacher Registration Form -->
+    <string name="teachers_register_title">Registrar Nuevo Profesor</string>
+    <string name="teachers_register_description">Complete los datos para registrar un nuevo profesor</string>
+    <string name="teachers_first_name">Nombre</string>
+    <string name="teachers_last_name">Apellido</string>
+    <string name="teachers_email">Correo Electrónico</string>
+    <string name="teachers_country_code">Código</string>
+    <string name="teachers_phone">Teléfono</string>
+    <string name="teachers_register_button">Registrar Profesor</string>
+    <string name="teachers_register_button_loading">Registrando…</string>
+
+    <!-- Teacher Screen -->
+    <string name="teachers_screen_title">Maneja la información del personal docente</string>
+    <string name="teachers_screen_description">Administre el registro de nuevos profesores y consulte el directorio completo de la academia.</string>
+    <string name="teachers_register_success">¡Profesor registrado exitosamente!</string>
+
+    <!-- Validation Messages -->
+    <string name="teachers_validation_required_fields">Por favor completa todos los campos requeridos</string>
+
+    <!-- Error Messages -->
+    <string name="teachers_error_register_failed">Error al registrar profesor</string>
+    <string name="teachers_error_load_failed">Error al cargar profesores</string>
+</resources>

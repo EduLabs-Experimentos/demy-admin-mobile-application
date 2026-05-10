@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Teacher Search Panel -->
+    <string name="teachers_search_title">Search Teachers</string>
+    <string name="teachers_search_description">Find and manage registered teachers</string>
+    <string name="teachers_search_placeholder">Search by name or email</string>
+    <string name="teachers_search_input_placeholder">Enter name or email…</string>
+    <string name="teachers_not_found">No teachers found</string>
+    <string name="teachers_found_count">%1$d teacher(s) found</string>
+    <string name="teacher_edit">Edit teacher</string>
+    <string name="teacher_delete">Delete teacher</string>
+    <string name="teacher_search">Search</string>
+
+    <!-- Teacher Registration Form -->
+    <string name="teachers_register_title">Register New Teacher</string>
+    <string name="teachers_register_description">Complete the form to register a new teacher</string>
+    <string name="teachers_first_name">First Name</string>
+    <string name="teachers_last_name">Last Name</string>
+    <string name="teachers_email">Email</string>
+    <string name="teachers_country_code">Code</string>
+    <string name="teachers_phone">Phone</string>
+    <string name="teachers_register_button">Register Teacher</string>
+    <string name="teachers_register_button_loading">Registering…</string>
+
+    <!-- Teacher Screen -->
+    <string name="teachers_screen_title">Manage teaching staff information</string>
+    <string name="teachers_screen_description">Manage the registration of new teachers and consult the complete academy directory.</string>
+    <string name="teachers_register_success">Teacher registered successfully!</string>
+
+    <!-- Validation Messages -->
+    <string name="teachers_validation_required_fields">Please complete all required fields</string>
+
+    <!-- Error Messages -->
+    <string name="teachers_error_register_failed">Failed to register teacher</string>
+    <string name="teachers_error_load_failed">Failed to load teachers</string>
+</resources>

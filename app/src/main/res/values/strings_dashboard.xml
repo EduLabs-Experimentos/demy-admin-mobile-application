@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dashboard Screen -->
+    <string name="dashboard_academy_label">Academy</string>
+    <string name="dashboard_total_income_label">Total Income</string>
+    <string name="dashboard_total_expenses_label">Total Expenses</string>
+    <string name="dashboard_total_balance_label">Total Balance</string>
+    <string name="dashboard_loading">Loading…</string>
+    <string name="dashboard_income_expense_trend">Income vs Expense Trend</string>
+    <string name="dashboard_expense_categories">Expense Categories</string>
+    <string name="dashboard_no_data">No data available</string>
+    <string name="dashboard_no_expense_data">No expense data available</string>
+    <string name="dashboard_error_loading">Error loading dashboard</string>
+
+    <!-- Dashboard Bottom Row -->
+    <string name="dashboard_teachers_students_title">Teachers &amp; Students</string>
+    <string name="dashboard_total_teachers">Total Teachers</string>
+    <string name="dashboard_total_students">Total Students</string>
+
+    <string name="dashboard_enrollments_schedules_title">Enrollments &amp; Schedules</string>
+    <string name="dashboard_active_enrollments">Active Enrollments</string>
+    <string name="dashboard_available_schedules">Available Schedules</string>
+
+    <string name="dashboard_courses_classrooms_title">Courses &amp; Classrooms</string>
+    <string name="dashboard_total_courses">Total Courses</string>
+    <string name="dashboard_total_classrooms">Total Classrooms</string>
+</resources>
+

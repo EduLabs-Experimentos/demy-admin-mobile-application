@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Finance Screen -->
+    <string name="finance_screen_title">Gestión Financiera</string>
+    <string name="finance_screen_description">Registra y administra las transacciones financieras</string>
+
+    <!-- Finance Registration Form -->
+    <string name="finance_register_title">Registrar Transacción</string>
+    <string name="finance_register_description">Completa los detalles de la transacción</string>
+    <string name="finance_type">Tipo</string>
+    <string name="finance_category">Categoría</string>
+    <string name="finance_method">Método</string>
+    <string name="finance_amount">Monto</string>
+    <string name="finance_currency">Moneda</string>
+    <string name="finance_date">Fecha</string>
+    <string name="finance_description">Descripción</string>
+    <string name="finance_register_button">Registrar Transacción</string>
+    <string name="finance_register_button_loading">Registrando…</string>
+
+    <!-- Transaction Types -->
+    <string name="finance_type_income">Ingreso</string>
+    <string name="finance_type_expense">Egreso</string>
+
+    <!-- Transaction Categories -->
+    <string name="finance_category_student_enrollment">Matrícula de Estudiante</string>
+    <string name="finance_category_student_monthly_fee">Mensualidad de Estudiante</string>
+    <string name="finance_category_student_one_time_payment">Pago Único de Estudiante</string>
+    <string name="finance_category_teacher_salary">Salario de Profesor</string>
+    <string name="finance_category_office_supplies">Útiles de Oficina</string>
+    <string name="finance_category_other">Otro</string>
+
+    <!-- Payment Methods -->
+    <string name="finance_method_cash">Efectivo</string>
+    <string name="finance_method_debit_card">Tarjeta de Débito</string>
+    <string name="finance_method_credit_card">Tarjeta de Crédito</string>
+    <string name="finance_method_bank_transfer">Transferencia Bancaria</string>
+    <string name="finance_method_wallet">Billetera Digital</string>
+    <string name="finance_method_other">Otro</string>
+
+    <!-- Currencies -->
+    <string name="finance_currency_pen">Soles</string>
+    <string name="finance_currency_usd">Dólares</string>
+
+    <!-- Finance Messages -->
+    <string name="finance_register_success">Transacción registrada exitosamente</string>
+    <string name="finance_error_register_failed">Error al registrar la transacción</string>
+    <string name="finance_error_load_failed">Error al cargar las transacciones</string>
+    <string name="finance_validation_required_fields">Por favor completa todos los campos requeridos</string>
+
+    <!-- Finance Analytics -->
+    <string name="finance_analytics_title">Análisis Financiero</string>
+    <string name="finance_analytics_description">Información visual de tus datos financieros</string>
+    <string name="finance_income_expense_trend">Tendencia de Ingresos vs Egresos</string>
+    <string name="finance_expense_categories">Principales Categorías de Egresos</string>
+    <string name="finance_loading_data">Cargando datos financieros…</string>
+    <string name="finance_no_data">No hay datos disponibles para mostrar</string>
+
+    <!-- Chart Legends -->
+    <string name="finance_legend_income">Ingresos</string>
+    <string name="finance_legend_expense">Gastos</string>
+</resources>
+
+
