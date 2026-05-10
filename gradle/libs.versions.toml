@@ -25,6 +25,9 @@ datastore = "1.1.7"
 coroutines = "1.10.2"
 vico = "1.15.0"
 ehsannarmaniCharts = "0.0.13"
+cucumber = "7.18.0"
+mockitoKotlin = "5.3.1"
+coroutinesTest = "1.8.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -69,6 +72,10 @@ vico-core = { module = "com.patrykandpatrick.vico:core", version.ref = "vico" }
 vico-compose = { module = "com.patrykandpatrick.vico:compose", version.ref = "vico" }
 vico-views = { module = "com.patrykandpatrick.vico:views", version.ref = "vico" }
 ehsannarmani-charts = { module = "io.github.ehsannarmani:compose-charts", version.ref = "ehsannarmaniCharts" }
+cucumber-java = { group = "io.cucumber", name = "cucumber-java", version.ref = "cucumber" }
+cucumber-junit = { group = "io.cucumber", name = "cucumber-junit", version.ref = "cucumber" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

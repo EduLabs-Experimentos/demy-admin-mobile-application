@@ -17,6 +17,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -62,7 +63,7 @@ fun TeacherRegistrationForm(
                 leadingIcon = {
                     Icon(Icons.Default.Person, contentDescription = null)
                 },
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.weight(1f).testTag("teacher-firstName"),
                 singleLine = true
             )
 
@@ -73,7 +74,7 @@ fun TeacherRegistrationForm(
                 leadingIcon = {
                     Icon(Icons.Default.Person, contentDescription = null)
                 },
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.weight(1f).testTag("teacher-lastName"),
                 singleLine = true
             )
         }
@@ -87,7 +88,7 @@ fun TeacherRegistrationForm(
                 Icon(Icons.Default.Email, contentDescription = null)
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().testTag("teacher-email"),
             singleLine = true
         )
 
@@ -121,7 +122,7 @@ fun TeacherRegistrationForm(
         Button(
             onClick = onSubmit,
             enabled = !isLoading,
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().testTag("teacher-submit-button"),
             colors = ButtonDefaults.buttonColors(
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                 contentColor = MaterialTheme.colorScheme.onPrimaryContainer
