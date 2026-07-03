@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "741594446298",
+    "project_id": "experimentos-mobile-admins",
+    "storage_bucket": "experimentos-mobile-admins.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741594446298:android:075e5c73201cbe0981a8e3",
+        "android_client_info": {
+          "package_name": "com.edulabs.demyadmins"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdo6RroMT6YNKM_GUTwWMEJk0PZLu0abE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741594446298:android:05c980a8c4f9d27b81a8e3",
+        "android_client_info": {
+          "package_name": "com.nistra.demy.admins"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdo6RroMT6YNKM_GUTwWMEJk0PZLu0abE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
