@@ -30,13 +30,14 @@ android {
             buildConfigField("Boolean", "LOG_HTTP", "true")
         }
         release {
-            buildConfigField("String", "API_BASE_URL", "\"https://nistra-demy.up.railway.app/api/v1/\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://demy-app-backend-eygre7eda5g3hkfh.southeastasia-01.azurewebsites.net/api/v1/\"")
             buildConfigField("Boolean", "LOG_HTTP", "false")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
