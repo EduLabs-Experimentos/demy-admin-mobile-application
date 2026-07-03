@@ -118,4 +118,9 @@ dependencies {
 
     // Ehsan Narmani Charts
     implementation(libs.ehsannarmani.charts)
+
+    testImplementation(libs.cucumber.java)
+    testImplementation(libs.cucumber.junit)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.coroutines.test)
 }

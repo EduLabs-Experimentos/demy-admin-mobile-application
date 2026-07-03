@@ -23,6 +23,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
@@ -56,7 +57,7 @@ fun SignInForm(
                 )
             },
             singleLine = true,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth().testTag("input-email-login")
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -73,7 +74,7 @@ fun SignInForm(
             },
             singleLine = true,
             visualTransformation = PasswordVisualTransformation(),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth().testTag("input-password-login")
         )
 
         Box(modifier = Modifier.fillMaxWidth()) {
@@ -98,6 +99,7 @@ fun SignInForm(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp)
+                .testTag("btn-submit-login")
         ) {
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.Login,
