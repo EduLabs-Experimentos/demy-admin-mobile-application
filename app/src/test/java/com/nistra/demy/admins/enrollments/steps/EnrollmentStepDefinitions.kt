@@ -1,5 +1,6 @@
 package com.nistra.demy.admins.features.enrollments.steps
 
+import com.nistra.demy.admins.core.analytics.AnalyticsLogger
 import com.nistra.demy.admins.features.enrollments.domain.model.Enrollment
 import com.nistra.demy.admins.features.enrollments.domain.model.EnrollmentStatus
 import com.nistra.demy.admins.features.enrollments.domain.model.PaymentStatus
@@ -55,6 +56,7 @@ class EnrollmentStepDefinitions {
     private val getAllStudentsUseCase: GetAllStudentsUseCase        = mock()
     private val getAllPeriodsUseCase: GetAllPeriodsUseCase         = mock()
     private val getAllSchedulesUseCase: GetAllSchedulesUseCase     = mock()
+    private val analyticsLogger: AnalyticsLogger                   = mock()
 
     // ── ViewModel bajo prueba ──────────────────────────────────────────────
     private lateinit var viewModel: EnrollmentsViewModel
@@ -169,7 +171,8 @@ class EnrollmentStepDefinitions {
             deleteEnrollmentUseCase = deleteEnrollmentUseCase,
             getAllStudentsUseCase    = getAllStudentsUseCase,
             getAllPeriodsUseCase     = getAllPeriodsUseCase,
-            getAllSchedulesUseCase   = getAllSchedulesUseCase
+            getAllSchedulesUseCase   = getAllSchedulesUseCase,
+            analyticsLogger          = analyticsLogger
         )
         advanceUntilIdle()
     }

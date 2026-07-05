@@ -5,6 +5,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nistra.demy.admins.R
+import com.nistra.demy.admins.core.analytics.AnalyticsLogger
 import com.nistra.demy.admins.core.common.SnackbarMessage
 import com.nistra.demy.admins.core.common.SnackbarType
 import com.nistra.demy.admins.features.billing.domain.usecase.AddInvoiceToBillingAccountUseCase
@@ -32,7 +33,8 @@ class BillingAccountDetailsViewModel @Inject constructor(
     private val getBillingAccountByIdUseCase: GetBillingAccountByIdUseCase,
     private val addInvoiceToBillingAccountUseCase: AddInvoiceToBillingAccountUseCase,
     private val deleteInvoiceUseCase: DeleteInvoiceUseCase,
-    private val markInvoiceAsPaidUseCase: MarkInvoiceAsPaidUseCase
+    private val markInvoiceAsPaidUseCase: MarkInvoiceAsPaidUseCase,
+    private val analyticsLogger: AnalyticsLogger
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(BillingAccountDetailsUiState())
@@ -117,7 +119,7 @@ class BillingAccountDetailsViewModel @Inject constructor(
 
             addInvoiceToBillingAccountUseCase(billingAccountId, newInvoice)
                 .onSuccess {
-
+                    analyticsLogger.logEvent("admin_invoice_create")
                     onShowAddInvoiceDialog(false)
                     loadAccountDetails()
                     _uiState.update {

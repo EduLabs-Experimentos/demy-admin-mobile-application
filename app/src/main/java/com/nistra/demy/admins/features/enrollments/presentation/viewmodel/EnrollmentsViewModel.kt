@@ -2,6 +2,7 @@ package com.nistra.demy.admins.features.enrollments.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.nistra.demy.admins.core.analytics.AnalyticsLogger
 import com.nistra.demy.admins.features.enrollments.domain.model.Enrollment
 import com.nistra.demy.admins.features.enrollments.domain.model.EnrollmentStatus
 import com.nistra.demy.admins.features.enrollments.domain.model.PaymentStatus
@@ -30,7 +31,8 @@ class EnrollmentsViewModel @Inject constructor(
     private val deleteEnrollmentUseCase: DeleteEnrollmentUseCase,
     private val getAllStudentsUseCase: GetAllStudentsUseCase,
     private val getAllPeriodsUseCase: GetAllPeriodsUseCase,
-    private val getAllSchedulesUseCase: GetAllSchedulesUseCase
+    private val getAllSchedulesUseCase: GetAllSchedulesUseCase,
+    private val analyticsLogger: AnalyticsLogger
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(EnrollmentUiState())
@@ -174,7 +176,8 @@ class EnrollmentsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, errorMessage = null) }
 
-            val result = if (enrollmentToSave.id == 0L) {
+            val isNewEnrollment = enrollmentToSave.id == 0L
+            val result = if (isNewEnrollment) {
                 createEnrollmentUseCase(enrollmentToSave)
             } else {
                 updateEnrollmentUseCase(enrollmentToSave)
@@ -182,6 +185,9 @@ class EnrollmentsViewModel @Inject constructor(
 
             result
                 .onSuccess {
+                    if (isNewEnrollment) {
+                        analyticsLogger.logEvent("admin_enrollment_submit")
+                    }
                     onClearFormClick()
                     loadData()
                     _uiState.update { it.copy(isFormSuccess = true, isLoading = false) }

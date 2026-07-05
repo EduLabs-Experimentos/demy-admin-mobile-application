@@ -3,6 +3,7 @@ package com.nistra.demy.admins.features.finance.presentation.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nistra.demy.admins.R
+import com.nistra.demy.admins.core.analytics.AnalyticsLogger
 import com.nistra.demy.admins.core.common.LocalizedString
 import com.nistra.demy.admins.core.common.SnackbarMessage
 import com.nistra.demy.admins.core.common.SnackbarType
@@ -26,7 +27,8 @@ import javax.inject.Inject
 class RegisterTransactionViewModel @Inject constructor(
     private val registerTransactionUseCase: RegisterTransactionUseCase,
     private val getAllTransactionsUseCase: GetAllTransactionsUseCase,
-    @Suppress("unused") private val getTransactionByIdUseCase: GetTransactionByIdUseCase
+    @Suppress("unused") private val getTransactionByIdUseCase: GetTransactionByIdUseCase,
+    private val analyticsLogger: AnalyticsLogger
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(RegisterTransactionUiState())
@@ -112,6 +114,7 @@ class RegisterTransactionViewModel @Inject constructor(
 
             registerTransactionUseCase(transaction)
                 .onSuccess { _ ->
+                    analyticsLogger.logEvent("admin_finance_entry_save")
                     _uiState.update {
                         it.copy(
                             isLoading = false,
